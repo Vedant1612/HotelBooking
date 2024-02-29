@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="Booking_style.css">
+</head>
+<body>
+    <article class="booking-banner">
+        <div id="nav">
+            <div id="LOGO">VEDANT</div>
+            <li type="none"><a href="index.html" style="text-decoration: none; font-weight: 900;">Home</a></li>
+            <li type="none"><a href="" style="text-decoration: none; font-weight: 900;">Hotel Branches</a></li>
+            <li type="none"><a href="" style="text-decoration: none; font-weight: 900;">Adventure</a></li>
+            <li type="none"><a href="" style="text-decoration: none; font-weight: 900;">Restaurants</a></li>
+            <li type="none"><a href="Booking.html" style="text-decoration: none; font-weight: 900;">Booking</a></li>
+        </div>
+        <article class="grid-container">
+            <section class="booking-form">
+                <form method="get" id="bookingForm">
+                    <h2>Room Booking</h2>
+
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="check-in">Check-in Date:</label>
+                    <input type="date" id="check-in" name="check-in" required>
+          
+                    <label for="numberOfNights">Number of Nights:</label>
+                    <input type="number" id="numberOfNights" min="1" value="1">
+
+                    <label for="room-type">Room Type:</label>
+                    <select id="room-type" required>
+                      <option value="" disabled selected>Select Room Type</option>
+                      <option value="Single" style="color: black;">Single</option>
+                      <option value="Double" style="color: black;">Double</option>
+                      <option value="Triple" style="color: black;">Triple</option> 
+                      </select>
+                      
+                    <label for="numberOfRooms">Number of Rooms:</label>
+                    <input type="number" id="numberOfRooms" min="1" value="1">
+
+                    <label for="adults">Number of Adults:</label>
+                    <input type="number" id="adults" min="1" value="1">
+
+                    <label for="children">Number of Children:</label>
+                    <input type="number" id="children" min="0" value="0"> 
+
+                   <p>
+                    <label>Extra Requirements:</label>
+                    <input type="checkbox" id="wifi" name="extra" value="wifi"> <label for="wifi">WiFi</label>
+                    <input type="checkbox" id="pool-view" name="extra" value="pool-view"> <label for="pool-view">Pool View</label>
+                    <input type="checkbox" id="garden-view" name="extra" value="garden-view"> <label for="garden-view">Garden View</label>
+                    <input type="checkbox" id="ac" name="extra" value="ac"> <label for="ac">A/C</label>
+                   </p>
+
+                   <label for="extra_beds">Extra Beds:</label>
+                   <input type="number" id="extra_beds" name="extra_beds" min="0" value="0" max="4">
+                    
+                    <input type="text" placeholder="Enter promo code" class="promo-code-field" id="promo">
+                    <button type="submit" id="bookNow">Book Now</button>
+                </form>
+            </section>
+
+            <section class="DisplayInfo">
+                <section class="table-container">
+                    <h2 id="currentBooking">Current Booking</h2>
+                    <table class="booking-table" id="current-booking">
+                     
+                    </table>
+                </section> 
+            </section>
+        </article>
+    </article>
+    <section class="overallBooking">
+      <h2>Overall Booking</h2>
+      <table id="overallBookingDisplay">
+
+      </table>
+    </section>
+    <section id="popup" class="popup">
+        <h1>Thank you for Booking with us!</h1>
+        <table id="popupContent" class="popupContent">
+        </table>
+        <button type="button" id="popupOk">OK</button>
+    </section>
+
+    <div id="footer">
+        <img
+          src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-footer.svg"
+          alt=""
+        />
+        <div id="f1">
+            <div id="LOGO">VEDANT</div>
+        </div>
+        <div id="f2">
+          <h3>DETAILS</h3>
+          <h3>RESTAURANT</h3>
+          <h3>SPA</h3>
+        </div>
+        <div id="f3">
+          <h3>coffee shop</h3>
+          <h3>laundry</h3>
+          <h3>Contact us</h3>
+        </div>
+        <div id="f4">
+          <h4>
+            D20, VEDANT CORNER <br />
+            PUNE <br />
+            INDIA <br />
+            BR7 6RP <br />
+            TEL: 1111 999 1111 <br />
+            GET DIRECTIONS <br />
+          </h4>
+        </div>
+      </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

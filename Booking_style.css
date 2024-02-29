@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+    color: #fff;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+
+body {
+    overflow-x: hidden;
+  }
+
+#nav{
+    height: 130px;
+    width: 100%;
+    background: linear-gradient(to left bottom, rgba(116, 102, 102, 0.546), #e6894f);
+    display: flex;
+    align-items: center;
+    padding: 0 120px;
+    gap: 50px;
+    justify-content: flex-start;
+    z-index: 99;
+}
+#nav #LOGO{
+    font-size: 3.5vw;
+    font-weight: 900;
+    position: relative;
+    color: #f0ece5fc;
+}
+
+#nav #LOGO::before{
+    content: "VEDANT";
+    position: absolute;
+    color: rgb(1, 18, 18);
+    top: -5px;
+    left: -5px;
+    z-index: -1;
+    box-shadow: 15px 15px 12px rgb(13, 13, 13);
+}
+
+.booking-banner{
+    max-width: 100%;
+    height: 300vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/BookPhoto.webp);
+    background-size: cover;
+    background-position: center;
+  }
+  
+.booking-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #590808;
+  font-size: 40px;
+}
+.booking-form {
+    max-height: 1310px;
+  max-width: 80%;
+  margin: auto auto;
+  padding: 20px;
+  border: 2px solid black;
+  background: linear-gradient(to left bottom, rgba(116, 102, 102, 0.546), #e6894f);
+  border-radius: 1rem;
+  box-shadow: #0c0808 0px 8px 24px;
+}
+.booking-form form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.booking-form label{
+  color: #0c0000;
+  font-weight: 900;
+}
+.booking-form label,
+.booking-form input,
+.booking-form select,
+.booking-form button {
+  width: 100%;
+  margin-bottom: 20px;
+  color: #000;
+  font-size: large;
+}
+.booking-form input,
+.booking-form select {
+  padding: 10px;
+  border: 1px solid #070505;
+  border-radius: 5px;
+}
+.booking-form p{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.booking-form button {
+  background-color: #010509;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.booking-form button:hover{
+  background-color: #cb300da9;
+}
+.DisplayInfo{
+  display: none;
+  height: auto;
+}
+.DisplayInfo h2{
+    text-align: center;
+    padding-top: 2rem;
+}
+.table-container {
+  max-width: 100%;
+  background: linear-gradient(to left bottom, rgba(116, 102, 102, 0.546), #e6894f);
+  border: 1px solid black;
+  margin: 2rem;
+  height: 85vh;
+  border-radius: 1rem;
+  box-shadow: #0e0b0b 0px 8px 24px;
+  margin-top: 6rem;
+}
+.booking-table {
+  width: 90%;
+  margin-left: 5%;
+  margin-right:5%;
+  margin-top: 1rem;
+}
+
+.booking-table th, .booking-table td {
+  background-color: #b06868;
+  padding: 10px;
+  text-align: left;
+}
+.overallBooking{
+  height: 100vh;
+  background-image: linear-gradient(rgba(74, 49, 49, 0.66),rgba(0,0,0,0.75));
+  background-size: cover;
+  background-position: center;
+}
+.overallBooking table{
+  width: 80%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 10%;
+}
+.overallBooking th, .overallBooking td{
+  background-color: #532121;
+  padding: 10px;
+  text-align: left;
+}
+.overallBooking h2{
+  text-align: center;
+  padding-top: 30px;
+}
+
+.popup{
+  width: 400px;
+  border: black solid 2px;
+  position: fixed;
+  background-color: #74d2f5;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-50%)scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: var(--secondry-text-color);
+  visibility: hidden;
+  transition: transform 0.4s,top 0.4s;
+}
+.open_popup{
+  visibility: visible;
+  top: 35%;
+  transform: translate(-50%,-50%)scale(1);
+}
+.popup h1{
+  margin-top: 1rem;
+  font-size: 38px;
+  margin: 30px 0 10px;
+}
+.popup button{
+  background-color: #154c79;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.popup table{
+  border-collapse: collapse;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.popup th, .popup td {
+  padding: 3px;
+  text-align: left;
+}
+#footer {
+    height: 40vh;
+    width: 100%;
+    background: linear-gradient(to left bottom, rgba(226, 52, 52, 0.71), #df8989f5);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6.5vw;
+    padding: 0 100px;
+  }
+  #footer > img {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    z-index: 0;
+  }
+  #f1 #LOGO{
+    font-size: 3.5vw;
+    font-weight: 900;
+    position: relative;
+    color: #f0ece5fc;
+}
+
+#f1 #LOGO::before{
+    content: "VEDANT";
+    position: absolute;
+    color: rgb(1, 18, 18);
+    top: -5px;
+    left: -5px;
+    z-index: -1;
+    box-shadow: 15px 15px 12px rgb(13, 13, 13);
+}
+  #f1,
+  #f2,
+  #f3,
+  #f4 {
+    position: relative;
+    z-index: 99;
+    /* background-color: red; */
+  }
+  #f2 h3 {
+    font-size: 1.6vw;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 900;
+    margin-bottom: 8px;
+  }
+  
+  #f3 h3 {
+    font-size: 1.6vw;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 800;
+    margin-bottom: 8px;
+  }
+  #f4 h4 {
+    font-size: 1vw;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 8px;
+  }
+@media screen and (min-width: 40em) {
+    .logo{
+        width: 250px;
+    }
+    nav{
+        height: 90px;
+        background-color: var(--main-color);
+    }
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a:link,
+    nav a:visited{
+        border: none;
+    }
+    nav li{
+        text-align: center;
+    }
+    .booking-banner{
+      height: auto;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-rows: 1fr; 
+      grid-template-columns: 2fr 1fr; 
+      height: auto; 
+    }
+    .booking-form {
+      max-width: 70%;
+      height: 300vh;
+    }
+    .DisplayInfo{
+      display: grid;
+      grid-template-rows: 1fr 1fr; 
+      grid-template-columns: 1fr;
+    }
+    .footer-main {
+        flex-direction: row;
+  
+    }
+}

@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Website</title>
+    <style>
+        ::selection{
+            background: #e28989;
+            color: #fff;
+        }
+    </style>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <div id="nav">
         <div id="LOGO">VEDANT</div>
-        <h4>HOME</h4>
-        <h4>ABOUT US</h4>
-        <h4>SERVICES</h4>
-        <h4>BOOKING</h4>
-        <h4>CAFÉ</h4>
-        <h4>EVENTS</h4>
+        <li type="none"><a href="index.html" style="text-decoration: none; font-weight: 900;">Home</a></li>
+        <li type="none"><a href="" style="text-decoration: none; font-weight: 900;">Hotel Branches</a></li>
+        <li type="none"><a href="" style="text-decoration: none; font-weight: 900;">Adventure</a></li>
+        <li type="none"><a href="" style="text-decoration: none; font-weight: 900;">Restaurants</a></li>
+        <li type="none"><a href="Booking.html" style="text-decoration: none; font-weight: 900;">Booking</a></li>
     </div>
     
     <div id="main">
@@ -43,7 +48,7 @@
             </div>
             <div id="about-us">
                 <img
-                  src="bedroom1.jpeg"
+                  src="./images/bedroom1.jpeg"
                   alt=""
                 />
                 <div id="about-us-in">
@@ -53,7 +58,7 @@
                   </p>
                 </div>
                 <img
-                  src="bedroom2.jpeg"
+                  src="./images/bedroom2.jpeg"
                   alt=""
                 />
               </div>
@@ -120,49 +125,25 @@
                 
                 <h2>RESTAURANT</h2>
                 <img
-                  src="RESTRAUNT.jpg"
+                  src="images/RESTRAUNT.jpg"
                   alt=""
                 />
               </div>
               <div class="elem">
                 <h2>CAFE</h2>
                 <img
-                  src="CAFE.jpeg"
+                  src="./images/CAFE.jpeg"
                   alt=""
                 />
               </div>
               <div class="elem">
                 <h2>SPA</h2>
                 <img
-                  src="SPA.jpeg"
+                  src="images/SPA.jpeg"
                   alt=""
                 />
               </div>
         </div>
-        <div class="container">
-          <h1>FINALISE YOUR BOOKING TODAY !!!</h1>
-          <form action="">
-              <div class="form-group">
-                  <input type="text" name="" placeholder="Enter your Name">
-              </div>
-              <div class="form-group">
-                  <input type="text" name="" placeholder="Enter your Adhar Details">
-              </div>
-              <div class="form-group">
-                  <input type="text" name="" placeholder="Enter your Gender">
-              </div>
-              <div class="form-group">
-                  <input type="text" name="" placeholder="Enter total number of people with you">
-              </div>
-              <div class="form-group">
-                  <input type="text" name="" placeholder="Enter your Email Id">
-              </div>
-              <div class="form-group">
-                  <input type="text" name="" placeholder="Enter your Phone Number">
-              </div>
-              <button class="btn">Submit</button>
-          </form>
-      </div>
         <div id="footer">
             <img
               src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-footer.svg"
