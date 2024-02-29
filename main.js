@@ -203,7 +203,7 @@ function bookingUpdate(){
 function confirmBooking(evt){
   if (BookingForm.checkValidity()) {
     evt.preventDefault();
-
+    alert("Booking one. Successfully !!!");
     ovreallBooking.innerHTML = 
     `
       <tr>
